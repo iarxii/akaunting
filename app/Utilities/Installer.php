@@ -11,6 +11,9 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 
+// Define minimum supported PHP version # do not predefine here, it will be defined in the installer
+// define('AKAUNTING_PHP', '8.1.0');
+
 /**
  * Class Installer
  *

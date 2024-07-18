@@ -29,8 +29,15 @@ Akaunting uses [Laravel](http://laravel.com), the best existing PHP framework, a
 
 * Install [Composer](https://getcomposer.org/download) and [Npm](https://nodejs.org/en/download)
 * Clone the repository: `git clone https://github.com/akaunting/akaunting.git`
-* Install dependencies: `composer install ; npm install ; npm run dev`
-* Install Akaunting:
+* Install dependencies:
+* - Install php composer packages using `composer install`
+* - PS: Make sure to have nvm installed, and use Node version 12.18.3:
+    Check which node versions are installed: nvm list
+    install `nvm install 12.18.3` and `nvm use 12.18.3` to set version.
+* - To install node packages use `npm install`
+* - Compile node modules using `npm run dev`
+
+## Artisan Install Akaunting (migrations incl.)
 
 ```bash
 php artisan install --db-name="akaunting" --db-username="root" --db-password="pass" --admin-email="admin@company.com" --admin-password="123456"
